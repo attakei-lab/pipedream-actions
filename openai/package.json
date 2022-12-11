@@ -1,0 +1,27 @@
+{
+  "name": "pipedream-openai-actions",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write actions/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/attakei-lab/pipedream-actions.git"
+  },
+  "keywords": [
+    "pipedream"
+  ],
+  "bugs": {
+    "url": "https://github.com/attakei-lab/pipedream-actions/issues"
+  },
+  "homepage": "https://github.com/attakei-lab/pipedream-actions#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "prettier": "^2.7.1"
+  }
+}
