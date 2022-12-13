@@ -4,7 +4,7 @@ export default {
   key: "openai-shortcut-chatgpt",
   name: "Completions text by OpenAI",
   description: "For creation ChatGPT like answer by OpenAI API",
-  version: "0.1.1",
+  version: "0.1.2",
   type: "action",
   props: {
     apiKey: {
@@ -24,7 +24,7 @@ export default {
       data: {
         model: "text-davinci-003",
         prompt: this.text,
-        max_tokens: 4000,
+        max_tokens: 3000,
         temperature: 0,
       },
       headers: {
