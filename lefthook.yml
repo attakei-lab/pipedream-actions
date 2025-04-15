@@ -1,0 +1,11 @@
+# Important!
+#   This hooks require uv to
+
+pre-commit:
+  parallel: true
+  commands:
+    biome:
+      glob: '*.{js,mjs,json,jsonc}'
+      run: 'pnpm biome format --write {staged_files}'
+      stage_fixed: true
+

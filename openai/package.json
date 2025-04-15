@@ -10,9 +10,7 @@
     "type": "git",
     "url": "https://github.com/attakei-lab/pipedream-actions.git"
   },
-  "keywords": [
-    "pipedream"
-  ],
+  "keywords": ["pipedream"],
   "bugs": {
     "url": "https://github.com/attakei-lab/pipedream-actions/issues"
   },
