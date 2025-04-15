@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cli": "./pd",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node scripts/install-pd.mjs"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +18,8 @@
     "@types/node": "^22.14.1",
     "rimraf": "^6.0.1",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16"
   }
 }
