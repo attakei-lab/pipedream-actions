@@ -2,10 +2,10 @@ import { axios } from "@pipedream/platform";
 import { defineAction } from "@pipedream/types";
 
 export default defineAction({
-  key: "openai-shortcut-chatgpt",
+  key: "openai_shortcut-chatgpt",
   name: "Completions text by OpenAI",
   description: "For creation ChatGPT like answer by OpenAI API",
-  version: "0.1.2",
+  version: "0.1.3",
   type: "action",
   props: {
     apiKey: {
