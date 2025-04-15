@@ -53,7 +53,7 @@ function createHeader(parameter: OAuthParameter, signature: string): string {
 
 export default defineAction({
   name: "Twitter/Send tweet",
-  version: "0.0.0",
+  version: "0.1.0",
   key: "twitter_send-tweet",
   description: "Send tweet into X(Twitter).",
   type: "action",
