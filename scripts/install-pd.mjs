@@ -3,6 +3,7 @@
  * Install Pipedream CLI into project root.
  */
 import os from "node:os";
+import { existsSync } from "node:fs";
 
 import AdmZip from "adm-zip";
 
@@ -17,6 +18,11 @@ const CLI_URL = {
 
 // Main
 (async () => {
+  if (existsSync("./pd") || existsSync("./pd.exe")) {
+    console.log("Pipedream CLI is already exists.");
+    return;
+  }
+
   const osName = os.type();
   const cpuName = os.machine();
   const id = `${osName}-${cpuName}`;
