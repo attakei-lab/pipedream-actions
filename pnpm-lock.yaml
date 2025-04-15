@@ -11,6 +11,15 @@ importers:
       '@biomejs/biome':
         specifier: ^1.9.4
         version: 1.9.4
+      '@pipedream/types':
+        specifier: ^0.3.2
+        version: 0.3.2
+      '@types/node':
+        specifier: ^22.14.1
+        version: 22.14.1
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
 
 packages:
 
@@ -67,6 +76,20 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@pipedream/types@0.3.2':
+    resolution: {integrity: sha512-sX4UUdEbgCs7JkvyWPLqdtiJkGJ8ishKfo/V4CjH7AhTRuI0oStspphUJI+rj8jqp8nCviw+ba0mRGWlCk+iZQ==}
+
+  '@types/node@22.14.1':
+    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
+
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+
 snapshots:
 
   '@biomejs/biome@1.9.4':
@@ -103,3 +126,15 @@ snapshots:
 
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
+
+  '@pipedream/types@0.3.2':
+    dependencies:
+      typescript: 5.8.3
+
+  '@types/node@22.14.1':
+    dependencies:
+      undici-types: 6.21.0
+
+  typescript@5.8.3: {}
+
+  undici-types@6.21.0: {}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* 基本設定 */
+    "target": "ES2020",
+    "module": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    /* 詳細設定 (必要に応じて調整) */
+    "moduleResolution": "NodeNext",
+    "declaration": false,
+    "sourceMap": false
+    // "isolatedModules": true,                /* 各ファイルを独立したモジュールとしてコンパイルする (babel などのトランスパイラとの互換性向上) */
+    // "noEmitOnError": true,                  /* エラーが発生した場合、出力ファイルを生成しない */
+    // "noImplicitAny": true,                  /* 型が明示的に指定されていない変数に対してエラーを発生させる */
+    // "noUnusedLocals": true,                 /* 使用されていないローカル変数に対してエラーを発生させる */
+    // "noUnusedParameters": true,             /* 使用されていない関数パラメータに対してエラーを発生させる */
+    // "removeComments": true,                 /* 出力からコメントを削除する */
+    // "preserveConstEnums": true,             /* const enum メンバを削除しない */
+    // "resolveJsonModule": true,               /* JSON ファイルのインポートを許可する */
+    // "experimentalDecorators": true,         /* Decorator の実験的なサポートを有効にする */
+    // "emitDecoratorMetadata": true,          /* Decorator の型情報を出力ファイルに含める */
+  }
+}

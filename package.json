@@ -11,6 +11,9 @@
   "license": "Apache-2.0",
   "packageManager": "pnpm@10.6.5",
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4"
+    "@biomejs/biome": "^1.9.4",
+    "@pipedream/types": "^0.3.2",
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
   }
 }
