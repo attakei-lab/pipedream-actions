@@ -1,10 +1,11 @@
 import { axios } from "@pipedream/platform";
+import { defineAction } from "@pipedream/types";
 
-export default {
-  key: "openai-shortcut-chatgpt",
+export default defineAction({
+  key: "openai_shortcut-chatgpt",
   name: "Completions text by OpenAI",
   description: "For creation ChatGPT like answer by OpenAI API",
-  version: "0.1.2",
+  version: "0.1.3",
   type: "action",
   props: {
     apiKey: {
@@ -17,7 +18,11 @@ export default {
       label: "Target text",
     },
   },
-  async run({ $ }) {
+  async run(options) {
+    if (!options) {
+      throw new Error("Argument is required");
+    }
+    const { $ } = options;
     const config = {
       url: "https://api.openai.com/v1/completions",
       method: "post",
@@ -38,4 +43,4 @@ export default {
       text: result.choices[0].text.trim(),
     };
   },
-};
+});
