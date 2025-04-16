@@ -8,6 +8,3 @@ pre-commit:
       glob: '*.{js,mjs,json,jsonc}'
       run: 'pnpm biome format --write {staged_files}'
       stage_fixed: true
-    doc8:
-      glob: '*.rst'
-      run: 'uv run doc8 {staged_files}'
