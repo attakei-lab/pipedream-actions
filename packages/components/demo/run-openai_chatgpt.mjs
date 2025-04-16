@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import actionDef from "./actions/chatgpt.mjs";
+import actionDef from "../dist/openai/chatgpt.mjs";
 
 dotenv.config();
 

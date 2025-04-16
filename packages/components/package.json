@@ -1,18 +1,21 @@
 {
-  "name": "@attakei/pipedream-components/bluesky",
+  "name": "@attakei/pipedream-components",
+  "version": "0.0.0",
   "private": true,
-  "version": "0.0.3",
-  "description": "",
+  "description": "My custom components for Pipedream",
   "scripts": {
-    "build": "tsc",
     "clean": "rimraf dist",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Kazuya Takei",
   "license": "Apache-2.0",
   "packageManager": "pnpm@10.6.5",
   "dependencies": {
     "@pipedream/platform": "^1.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "prettier": "^2.7.1"
   }
 }

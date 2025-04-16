@@ -1,3 +1,26 @@
+/**
+ * Sending tweet to X(Twitter).
+ *
+ * ## Overview
+ *
+ * This action sends a simple tweet using X API v2.
+ *
+ * ## Props
+ *
+ * ### credentialsText
+ *
+ * JSON string included credentials to access X API.
+ * Parsed object has these attributes:
+
+ * - api_key
+ * - api_key_secret
+ * - access_token
+ * - access_token_secret
+ *
+ * ### bodyText
+ *
+ * Main message text of post.
+ */
 import crypto from "node:crypto";
 import { defineAction } from "@pipedream/types";
 
