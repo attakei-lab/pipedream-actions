@@ -15,7 +15,7 @@ type OGData = {
 
 export default defineAction({
   name: "Bluesky/Send post with OpenGraph URL.",
-  version: "0.0.3",
+  version: "0.1.1",
   key: "bluesky_send-post-with-opengraph-url",
   description: "Send post into Bluesky Social with link card from URL.",
   type: "action",
@@ -23,7 +23,7 @@ export default defineAction({
   props: {
     bodyText: {
       type: "string",
-      label: "Tweet text",
+      label: "Message text",
     },
     linkUrl: {
       type: "string",
